@@ -14,6 +14,7 @@ header a {
     color: white;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -30,7 +31,12 @@ header button {
 header button:hover {
     background-color: #0ee951;
 }
-
+/* 
+@media(min-width:700px ) {
+header .fa-solid{
+    display: none;
+}
+} */
 
 header ul {
     list-style-type: none;
@@ -83,8 +89,6 @@ nav .fa-brands {
     width: 80%;
     margin: auto;
     padding-top: 60px;
-
-
 }
 
 .container1 h1 {
@@ -118,7 +122,8 @@ a {
 @media(max-width:700px) {
 
     header ul {
-        display: block;
+        display: inline-block;
+        text-align: start;
     }
 
     header ul li {
@@ -830,6 +835,18 @@ h2 {
         flex-wrap: wrap;
     }
 }
+@media(min-width:701px) and (max-width:1200px) {
+    .container-testimonals {
+        flex-wrap: wrap;
+    }
+}
+@media(min-width:701px) and (max-width:1200px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+
 
 @media(max-width:700px) {
     .info-box4 {
@@ -886,17 +903,18 @@ h2 {
 }
 
 @media(max-width:700px) {
-   
+
     .container-about {
         flex-wrap: wrap;
     }
-
+   
     .about-box1 {
         width: 100%;
     }
-  #about h1{
-    font-size: 30px;
-  }
+
+    #about h1 {
+        font-size: 30px;
+    }
 
     .container-work {
         flex-wrap: wrap;
@@ -905,18 +923,20 @@ h2 {
 
     .work-box5 img {
         width: 100%;
-        
+
     }
 
     .workhead {
         width: 100%;
         margin: auto;
     }
-.testimonalheads{
-    width: 80%;
-    text-align: start;
-    margin: auto;
-}
+
+    .testimonalheads {
+        width: 80%;
+        text-align: start;
+        margin: auto;
+    }
+
     .work-boxes {
         width: 100%;
     }
@@ -925,14 +945,17 @@ h2 {
         position: relative;
         left: 50px;
     }
-.servicetop{
-    width: 80%;
-    text-align: start;
 
-}
+    .servicetop {
+        width: 80%;
+        text-align: start;
+
+    }
+
     .planshead {
         width: 90%;
         margin: auto;
         text-align: center;
     }
+    
 }
